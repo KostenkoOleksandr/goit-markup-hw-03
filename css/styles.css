@@ -6,14 +6,35 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
     list-style-type: none;
 }
+h1,h2,h3,p,ul{
+    margin: 0;
+    padding: 0;
+}
+img{ 
+    display:block;
+}
+.header{
+border-bottom: 1px solid #e7e9fc
+}
+.header-box{
+    display: flex;
+    flex:row;
 
-.hero-section {
-    background: #2e2f42;
+}
+.conteiner{
+    width:1158px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+.header-nav{
+    display: flex;
+    align-items:center;
 }
 
 .logo {
@@ -25,6 +46,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px
 }
 
 .logo-part {
@@ -35,6 +57,9 @@ ul {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     /* line-height: 24px; */
+    display:flex;
+    flex: row;
+    gap: 40px;
 }
 
 .anchor-link-list {
@@ -43,9 +68,11 @@ ul {
     font-weight: 500;
     text-decoration: none;
     color: #2e2f42;
+    padding: 24px 0;
 }
 
-.anchor-link-list:hover {
+.anchor-link-list:hover 
+{
     color: #404bbf;
 }
 
@@ -61,18 +88,27 @@ ul {
     line-height: 150%;
     letter-spacing: 0.02em;
     font-style: normal;
+   
+}
+.link-contact-link{
+    display: flex;
+    flex: row;
+    gap: 40px; ;
 }
 
-.link-contact-list {
+.link-contact-iteam {
     color: #434455;
 }
 
-.link-contact-list:hover {
+.link-contact-iteam:hover {
     color: #404bbf;
 }
 
-.link-contact-list:focus {
+.link-contact-iteam:focus {
     color: #404bbf;
+}
+.hero-section {
+    background: #2e2f42;
 }
 
 .hero-section-header {
