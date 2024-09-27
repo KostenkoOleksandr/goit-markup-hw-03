@@ -27,7 +27,7 @@ border-bottom: 1px solid #e7e9fc
     flex:row;
 
 }
-.conteiner{
+.container{
     width:1158px;
     margin: 0 auto;
     padding: 0 15px 0 15px;
@@ -109,6 +109,7 @@ border-bottom: 1px solid #e7e9fc
 }
 .hero-section {
     background: #2e2f42;
+    padding: 188px 0;
 }
 
 .hero-section-header {
@@ -120,6 +121,8 @@ border-bottom: 1px solid #e7e9fc
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
+   
 }
 
 .button {
@@ -131,6 +134,11 @@ border-bottom: 1px solid #e7e9fc
     line-height: 1.5;
     letter-spacing: 0.04em;
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border:none;
+    border-radius: 4px;
 }
 
 .button:hover {
