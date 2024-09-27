@@ -32,6 +32,15 @@ border-bottom: 1px solid #e7e9fc
     margin: 0 auto;
     padding: 0 15px 0 15px;
 }
+.paragraf {
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 24px; */
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+}
 .header-nav{
     display: flex;
     align-items:center;
@@ -163,22 +172,23 @@ border-bottom: 1px solid #e7e9fc
 }
 .visually-hidden{
     position: absolute;
-        width: 1px;
-        height: 1px;
-        margin: -1px;
-        padding: 0;
-        border: 0;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        clip-path: inset(100%);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(100%);
 }
 .benefits-list{
     display:flex;
-    flex:row;gap: 24px;
+    flex:row;
+    gap: 24px;
 }
 .benefits-item{
-    width: calc((100% - 3 * 24px) / 4);
+    flex-basis: calc((100% - 3 * 24px) / 4);
 }
 .benefit-item-title {
     font-weight: 500;
@@ -190,8 +200,9 @@ border-bottom: 1px solid #e7e9fc
     margin-bottom: 8px;
 }
 
-.our-team {
-    background-color: #f4f4fd
+.team {
+    background-color: #f4f4fd;
+    padding: 120px 0;
 }
 
 .our-team-header {
@@ -203,11 +214,17 @@ border-bottom: 1px solid #e7e9fc
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    margin-bottom: 72px;
 }
-
+.team-list{
+    display:flex;
+    flex: row;
+    gap: 24px;
+}
 .our-team-title {
+    flex-basis: calc((100% - 3 * 24px) / 4);
+    border-radius: 0px 0px 4px 4px;
     background-color: #FFFFFF;
-
 }
 
 .team-item-title {
@@ -217,18 +234,20 @@ border-bottom: 1px solid #e7e9fc
     line-height: 120%;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    text-align: center;
 }
-
-.paragraf {
+.team-item{
+    padding: 32px 0;
+}
+.paragraf-team{
     font-weight: 400;
     font-size: 16px;
     /* line-height: 24px; */
     line-height: 150%;
     letter-spacing: 0.02em;
     color: #434455;
-    
+     text-align: center;
 }
-
 .portfolio {
     font-size: 36px;
     line-height: 1.11;
@@ -237,12 +256,10 @@ border-bottom: 1px solid #e7e9fc
     text-transform: capitalize;
     color: #2e2f42;
 }
-
 .footer {
     color: #fff;
     background: #2e2f42;
 }
-
 .logo-second {
     font-size: 18px;
     /* line-height: 21px; */
@@ -251,7 +268,6 @@ border-bottom: 1px solid #e7e9fc
     text-transform: uppercase;
     color: #fff;
 }
-
 .footer-text {
     font-family: "Roboto",
         sans-serif;
@@ -263,7 +279,6 @@ border-bottom: 1px solid #e7e9fc
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
-
 .logo-footer {
     font-family: "Raleway",
         sans-serif;
@@ -275,7 +290,6 @@ border-bottom: 1px solid #e7e9fc
     text-transform: uppercase;
     color: #4d5ae5;
 }
-
 .logo-footer-parts {
     color: #f4f4fd
 }
