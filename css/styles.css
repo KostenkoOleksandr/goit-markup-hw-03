@@ -188,7 +188,7 @@ border-bottom: 1px solid #e7e9fc
     gap: 24px;
 }
 .benefits-item{
-    flex-basis: calc((100% - 3 * 24px) / 4);
+    width: calc((100% - 72px) / 4);
 }
 .benefit-item-title {
     font-weight: 500;
@@ -247,14 +247,48 @@ border-bottom: 1px solid #e7e9fc
     letter-spacing: 0.02em;
     color: #434455;
      text-align: center;
+    margin-bottom: 8px;
 }
-.portfolio {
+.portfolio{
+    padding-top: 120px;
+    padding-bottom: 120px
+}
+.portfolio-header {
     font-size: 36px;
     line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     color: #2e2f42;
+    margin-bottom: 72px;
+}
+.portfolio-list{
+    display: flex;
+    flex: row;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
+}
+.portfolio-list-item{
+    width: calc((100% - 48px) / 3);
+
+}
+.portfolio-item{
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+
+}
+.paragraf-portfolio {
+    font-weight: 400;
+    font-size: 16px;
+    /* line-height: 24px; */
+    line-height: 150%;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+    margin-bottom: 8px;
 }
 .footer {
     color: #fff;
@@ -268,6 +302,10 @@ border-bottom: 1px solid #e7e9fc
     text-transform: uppercase;
     color: #fff;
 }
+.footer{
+    padding: 100px 0;
+}
+
 .footer-text {
     font-family: "Roboto",
         sans-serif;
@@ -289,7 +327,12 @@ border-bottom: 1px solid #e7e9fc
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 .logo-footer-parts {
     color: #f4f4fd
+}
+.footer-paragraph{
+    max-width: 264px;
 }
